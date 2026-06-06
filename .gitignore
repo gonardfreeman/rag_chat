@@ -1,4 +1,7 @@
+.env
 node_modules
 *.secret
 *.secret.local
 *.secret.*
+
+/generated/prisma
