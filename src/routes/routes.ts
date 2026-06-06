@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { generateEmbeding, helloWorld } from "../controllers/index.ts";
+import { generateEmbeding, helloWorld } from "../controllers";
 
 const router = Router();
 
