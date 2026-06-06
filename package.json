@@ -2,20 +2,36 @@
   "name": "linear-chat",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@11.5.2",
-  "devDependencies": {
-    "@types/node": "^25.9.2",
-    "tsx": "^4.22.4",
-    "typescript": "^6.0.3"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "oxlint",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint:fix": "oxlint --fix",
+    "lint:init": "oxlint --init",
+    "prepare": "husky"
   },
   "dependencies": {
     "dotenv": "^17.4.2"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
+    "oxfmt": "^0.53.0",
+    "oxlint": "^1.68.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "pnpm run lint:fix",
+      "pnpm run fmt"
+    ]
+  },
+  "packageManager": "pnpm@11.5.2"
 }
