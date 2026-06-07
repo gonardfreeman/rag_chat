@@ -2,6 +2,8 @@
 
 This is simple example of RAG setup with help of [ollama](https://ollama.com/) + [pgvector](https://github.com/pgvector/pgvector)
 
+Mostly based on [this](https://github.com/dannyblaker/rag-tutorial/blob/main/lessons/02-understanding-embeddings.md)
+
 ## Setup
 
 1. Download [ollama](https://ollama.com)
